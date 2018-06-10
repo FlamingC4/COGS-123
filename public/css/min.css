@@ -21,10 +21,10 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 15rem;
+    max-width: 15rem;
     min-height: 100vh;
-    margin-left: -250px;
+    margin-left: -15rem;
 }
 
 #sidebar.active {
@@ -50,22 +50,35 @@ a, a:hover, a:focus {
 #sidebar ul p {
     color: #fff;
     padding: 10px;
+    transition: all 0.3s;
 }
 
 #sidebar ul li a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    transition: all 0.3s;
 }
-#sidebar ul li a:hover {
+
+#sidebar ul .listItem a:hover {
+    padding: 10px;
     color: #7386D5;
+    transition: all 0.3s;
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
+    transition: all 0.3s;
     background: #7386D5;
 }
+
+.sidebar-header h3 b{
+    font-size: 3rem;
+    color: #ffb92d;
+    -webkit-text-stroke: 2px black;
+}
+
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
@@ -113,6 +126,11 @@ a[data-toggle="collapse"] {
     background-color: transparent;
     color: black;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+}
+
+.icon span {
+    font-size: 1.5rem;
+    padding-right: 0.25rem;
 }
 
 .container-fluid{

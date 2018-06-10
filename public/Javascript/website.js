@@ -1,10 +1,11 @@
 "use strict";
 
-$(document).ready(function () {
+$(document).ready( function () {
     let sidebar = $('#sidebar');
     let sidebarCollapse = $('#sidebarCollapse');
     let arrow = $('#arrow');
-
+    let designProcess = $('#designProcess');
+    let chevDown = $('.fa-chevron-down');
 
     sidebarCollapse.click( function(){
         sidebar.toggleClass('active');
@@ -18,8 +19,12 @@ $(document).ready(function () {
         // }
     });
 
+    designProcess.click( function(){
+        chevDown.toggleClass('fa-chevron-down fa-chevron-up');
+    });
+
     collapseSidebar();
-    $( window ).resize(function() {
+    $( window ).resize( function() {
       collapseSidebar();
     });
 });
