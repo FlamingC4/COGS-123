@@ -2,8 +2,12 @@ body{
     margin: 0em;
 }
 
-.mainBody {
-    background-color: rgba(125,90,47,1);
+.menu{
+    display: flex;
+}
+
+.bootstrap {
+    border: solid rgba(125,90,47,1) 3px;
 }
 
 
