@@ -12,16 +12,22 @@ body{
 
 
 #sidebar {
+    width: 0%;
     height: 500px;
+    margin-right: -200px;
     position: relative;
     left: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 1;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .2s;
+    opacity: 0;
 }
 
 #sidebar.collapsed {
-  left: -200px;
-  margin-right: -200px;
+  width: 100%;
+  margin-right: 0px;
+  transition: all cubic-bezier(0.25,0.1,0.25,1) .2s;
+  opacity: 1;
 }
 
 #menuBody{
