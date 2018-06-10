@@ -8,7 +8,8 @@ $(document).ready(function () {
 
     sidebarCollapse.click( function(){
         sidebar.toggleClass('active');
-        arrow.toggleClass('fa-arrow-right fa-arrow-left');
+        sidebarCollapse.toggleClass('active');
+        arrow.toggleClass('fa-chevron-left fa-chevron-right');
         // if (arrow.hasClass('fa fa-arrow-left')){
         //     arrow.removeClass('fa fa-arrow-left');
         //     arrow.addClass('fa fa-arrow-right');
@@ -31,7 +32,7 @@ function collapseSidebar(){
         if (sidebar.hasClass('active')){
             sidebar.removeClass('active');
         }
-        arrow.removeClass('fa fa-arrow-right').addClass('fa fa-arrow-left');
+        arrow.removeClass('fa fa-chevron-left').addClass('fa fa-chevron-right');
     }
 }
 

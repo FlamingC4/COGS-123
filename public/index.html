@@ -19,7 +19,7 @@
   </head>
 
   <body>
-      <div class="wrapper">
+    <div class="wrapper">
         <nav id="sidebar">
             <!-- Sidebar Header -->
             <div class="sidebar-header">
@@ -27,10 +27,10 @@
             </div>
             <!-- Sidebar Links -->
             <ul class="list-unstyled components">
-                <li class="active"><a href="#">Home<span class="fas fa-arrow-down"></span></a></li>
+                <li class="collapsible active"><a href="#">Home<span class="fas fa-chevron-down"></span></a></li>
                 <li><a href="#">About</a></li>
                 <li><!-- Link with dropdown items -->
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages<span class="fas fa-arrow-down"></span></a>
+                    <a href="#homeSubmenu" class="collapsible" data-toggle="collapse" aria-expanded="false">Pages<span class="fas fa-chevron-down"></span></a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li><a href="#">Page</a></li>
                         <li><a href="#">Page</a></li>
@@ -42,11 +42,25 @@
             </ul>
         </nav>
         <div id="content">
-            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                <span class="fa fa-arrow-left" id="arrow"></span>
-                Toggle Sidebar
+            <button type="button" id="sidebarCollapse">
+                <span class="fa fa-chevron-right" id="arrow"></span>
             </button>
-        <div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="header col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 align-self-start">
+                    <h1>Ultra Competitive Sports Division<h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="header col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-start text-left">
+                    <h2>Testing text.<h2>
+                </div>
+                <div class="header col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-start text-right">
+                    <h2>Testing text.<h2>
+                </div>
+            </div>
+        </div>
     </div>
   </body>
 
