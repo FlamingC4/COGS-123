@@ -4,6 +4,8 @@ $(document).ready(function () {
     let sidebar = $('#sidebar');
     let sidebarCollapse = $('#sidebarCollapse');
     let arrow = $('#arrow');
+
+
     sidebarCollapse.click( function(){
         sidebar.toggleClass('active');
         arrow.toggleClass('fa-arrow-right fa-arrow-left');
@@ -14,7 +16,24 @@ $(document).ready(function () {
         //     arrow.removeClass('fa fa-arrow-right').addClass('fa fa-arrow-left');
         // }
     });
+
+    collapseSidebar();
+    $( window ).resize(function() {
+      collapseSidebar();
+    });
 });
+
+function collapseSidebar(){
+    let sidebar = $('#sidebar');
+    let sidebarCollapse = $('#sidebarCollapse');
+    let arrow = $('#arrow');
+    if ($(window).width() <= 550) {
+        if (sidebar.hasClass('active')){
+            sidebar.removeClass('active');
+        }
+        arrow.removeClass('fa fa-arrow-right').addClass('fa fa-arrow-left');
+    }
+}
 
 // $(document).ready(function () {
 //     let sidebar = $('#sidebar');
