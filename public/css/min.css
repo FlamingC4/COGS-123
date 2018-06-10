@@ -7,10 +7,10 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 0.9rem;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: black;
 }
 
 a, a:hover, a:focus {
@@ -49,19 +49,19 @@ a, a:hover, a:focus {
 
 #sidebar ul p {
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     transition: all 0.3s;
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 5px;
     font-size: 1.1em;
     display: block;
     transition: all 0.3s;
 }
 
 #sidebar ul .listItem a:hover {
-    padding: 10px;
+    padding: 5px;
     color: #7386D5;
     transition: all 0.3s;
     background: #fff;
@@ -81,7 +81,7 @@ a, a:hover, a:focus {
 
 ul ul a {
     font-size: 0.9em !important;
-    padding-left: 30px !important;
+    padding-left: 15px !important;
     background: #7386D5;
 }
 
@@ -102,7 +102,7 @@ a[data-toggle="collapse"] {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 0rem .5rem .5rem 0rem;
-    padding: 0.25rem 0.75rem;
+    padding: 0.25rem 0.5rem;
     z-index: 2;
 }
 
@@ -130,13 +130,12 @@ a[data-toggle="collapse"] {
 
 .icon span {
     font-size: 1.5rem;
-    padding-right: 0.25rem;
+    margin-left: .5rem;
+    padding-right: 1.25rem;
 }
 
 .container-fluid{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 2rem;
+    padding: 2rem 3rem;
     background-color: rgba(125, 90, 246, 0.5);
     width: 100%;
 }
@@ -144,6 +143,28 @@ a[data-toggle="collapse"] {
 .header {
     text-align: center;
     padding: 0.25rem 0.25rem;
+}
+
+.listItem{
+    margin: 0.75rem 0rem;
+}
+
+#desProc {
+    padding-left: 1.75rem;
+}
+
+.row p{
+    text-align: justify;
+    padding-right: 0.5rem;
+}
+
+.bodyText1 {
+    max-height: 100px;
+}
+
+.image{
+    width: inherit;
+    height: inherit;
 }
 
 

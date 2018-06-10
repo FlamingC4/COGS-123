@@ -4,7 +4,7 @@ $(document).ready( function () {
     let sidebar = $('#sidebar');
     let sidebarCollapse = $('#sidebarCollapse');
     let arrow = $('#arrow');
-    let designProcess = $('#designProcess');
+    let collapsible = $('.collapsible');
     let chevDown = $('.fa-chevron-down');
 
     sidebarCollapse.click( function(){
@@ -19,17 +19,20 @@ $(document).ready( function () {
         // }
     });
 
-    designProcess.click( function(){
+    collapsible.click( function(){
         chevDown.toggleClass('fa-chevron-down fa-chevron-up');
     });
 
     collapseSidebar();
     $( window ).resize( function() {
-      collapseSidebar();
+        collapseSidebar();
+        if (chevDown.hasClass('fa fa-chevron-up')) {
+              chevDown.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        }
     });
 });
 
-function collapseSidebar(){
+function collapseSidebar(event){
     let sidebar = $('#sidebar');
     let sidebarCollapse = $('#sidebarCollapse');
     let arrow = $('#arrow');
@@ -38,6 +41,7 @@ function collapseSidebar(){
             sidebar.removeClass('active');
         }
         arrow.removeClass('fa fa-chevron-left').addClass('fa fa-chevron-right');
+        event.stopImmediatePropagation();
     }
 }
 
