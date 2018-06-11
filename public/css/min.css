@@ -167,6 +167,12 @@ a[data-toggle="collapse"] {
     height: inherit;
 }
 
+.row p2{
+    text-align: justify;
+    padding-right: 0.5rem;
+    font-size: 4.0rem;
+}
+
 
 /* a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     content: '\e259';
