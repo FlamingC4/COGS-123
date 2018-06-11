@@ -20,12 +20,11 @@
 
   <body>
     <div class="wrapper">
+        <!-- Sidebar Holder -->
         <nav id="sidebar">
-            <!-- Sidebar Header -->
             <div class="sidebar-header">
                 <h3><b>U</b>ltra <b>C</b>ompetitive <b>S</b>ports <b>D</b>ivision</h3>
             </div>
-            <!-- Sidebar Links -->
             <ul class="list-unstyled components">
                 <li class="listItem" id="home">
                     <a href="index.html">
@@ -47,7 +46,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="listItem" id="designProcess"> <!-- Link with dropdown items -->
+                <li class="listItem" id="designProcess">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                         <div class="row collapsible">
                             <div class="icon col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 justify-content-left">
@@ -63,36 +62,46 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="needfinding.html">
-                                <div class="row">
-                                    <div class="icon col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-left">
+                            <div class="row">
+                                <div class="icon col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-left">
+                                    <a href="needfinding.html">
                                         <span class="fas fa-bullseye"></span>
                                         Needfinding
-                                    </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#homeSubmenu">
-                                <div class="row">
-                                    <div class="icon col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-left">
+                            <div class="row">
+                                <div class="icon col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-left">
+                                    <a href="insights.html">
                                         <span class="fas fa-eye"></span>
                                         Insights
-                                    </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#homeSubmenu">
-                                <div class="row">
-                                    <div class="icon col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-left">
+                            <div class="row">
+                                <div class="icon col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-left">
+                                    <a href="indeating.html">
                                         <span class="fa fa-lightbulb"></span>
                                         Ideating
-                                    </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                     </ul>
+                </li>
+                <li class="listItem" id="Contact">
+                    <a href="#">
+                        <div class="row">
+                            <div class="icon col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-left">
+                                <span class="fas fa-file"></span>
+                                Relevant Files
+                            </div>
+                        </div>
+                    </a>
                 </li>
                 <li class="listItem" id="Contact">
                     <a href="#">
@@ -106,19 +115,34 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- Page Content Holder -->
         <div id="content">
-            <button type="button" id="sidebarCollapse">
-                <span class="fa fa-chevron-right" id="arrow"></span>
-            </button>
-        </div>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
+
+            <div class="navbar-header">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <span class="fa fa-chevron-right" id="arrow"></span>
+                </button>
+            </div>
+
+            <nav class="navbar navbar-default">
+                <div class="row justify-content-center">
                 <div class="header col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 align-self-start">
                     <h1>Ultra Competitive Sports Division<h1>
                 </div>
             </div>
+
             <div class="row bodyText1">
                 <div class="header col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-start text-left" id="bodyTextPart1">
+                    <div class="row intro">
+                        <p2> Intro </p2>
+                    </div>
+                    <div class="row intro">
+                        <p>UCSD: an app that brings the audience together in every game. Our goal is to facilitate interest and
+                            get the crowd even more excited about the game.</p>
+                    </div>
+                </div>
+                    <div class="header col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-start text-left" id="column1">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                        when an unknown printer took a galley of type and scrambled it to make a type
@@ -127,9 +151,6 @@
                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                        and more recently with desktop publishing software like Aldus PageMaker
                        including versions of Lorem Ipsum.<p>
-                </div>
-                <div class="header col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-start text-right">
-                    <img src="http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg" alt="Doge" class="image">
                 </div>
             </div>
         </div>

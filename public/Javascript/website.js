@@ -2,6 +2,7 @@
 
 $(document).ready( function () {
     let sidebar = $('#sidebar');
+    let content = $('#content');
     let sidebarCollapse = $('#sidebarCollapse');
     let arrow = $('#arrow');
     let collapsible = $('.collapsible');
@@ -9,9 +10,11 @@ $(document).ready( function () {
 
     sidebarCollapse.click( function(){
         sidebar.toggleClass('active');
+        content.toggleClass('active');
         sidebarCollapse.toggleClass('active');
-        sidebarCollapse.css("")
-        arrow.toggleClass('fa-chevron-left fa-chevron-right');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        arrow.toggleClass('fa-chevron-right fa-chevron-left');
         // if (arrow.hasClass('fa fa-arrow-left')){
         //     arrow.removeClass('fa fa-arrow-left');
         //     arrow.addClass('fa fa-arrow-right');
@@ -33,7 +36,7 @@ $(document).ready( function () {
     });
 });
 
-function collapseSidebar(event){
+function collapseSidebar(){
     let sidebar = $('#sidebar');
     let sidebarCollapse = $('#sidebarCollapse');
     let arrow = $('#arrow');
@@ -42,7 +45,6 @@ function collapseSidebar(event){
             sidebar.removeClass('active');
         }
         arrow.removeClass('fa fa-chevron-left').addClass('fa fa-chevron-right');
-        event.stopImmediatePropagation();
     }
 }
 
