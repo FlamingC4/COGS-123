@@ -10,6 +10,7 @@ $(document).ready( function () {
     sidebarCollapse.click( function(){
         sidebar.toggleClass('active');
         sidebarCollapse.toggleClass('active');
+        sidebarCollapse.css("")
         arrow.toggleClass('fa-chevron-left fa-chevron-right');
         // if (arrow.hasClass('fa fa-arrow-left')){
         //     arrow.removeClass('fa fa-arrow-left');
