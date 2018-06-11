@@ -13,7 +13,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: black;
 }
 
 a, a:hover, a:focus {
@@ -170,26 +170,52 @@ ul ul a {
     padding: 0.25rem 0.25rem;
 }
 
+.text{
+    display: table;
+    width: 100%;
+}
+
+.col{
+    display: table-cell;
+}
+
 #content, .bodyText1, .navbar{
     background-color: #ffb92d;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
+
+.intro{
+    border: solid black 1px;
+    line-height: 4px;
 }
 
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     #sidebar {
-        margin-left: -15rem;
+        margin-left: 0rem;
     }
     #sidebar.active {
-        margin-left: 0;
+        margin-left: -15rem;
     }
     #content {
         width: 100%;
     }
     #content.active {
         width: calc(100% - 15rem);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .col {
+        display: block;
+        width: 100%;
     }
 }
 

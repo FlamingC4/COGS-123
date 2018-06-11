@@ -21,7 +21,7 @@ $(document).ready( function () {
         chevDown.toggleClass('fa-chevron-down fa-chevron-up');
     });
 
-    // collapseSidebar();
+    collapseSidebar();
     $( window ).resize( function() {
         collapseSidebar();
         if (chevDown.hasClass('fa fa-chevron-up')) {
