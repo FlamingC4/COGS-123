@@ -27,11 +27,13 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    /* position: absolute; */
+    position: fixed;
     min-width: 15rem;
     max-width: 15rem;
-    height: inherit;
+    height: 100vh;
     margin-left: -15rem;
+    top: 0;
+    left: 0;
     z-index: 3;
     background: #7386D5;
     color: #fff;
@@ -99,10 +101,6 @@ ul ul a {
     display: flex;
 }
 
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
 #sidebarCollapse {
     position: fixed;
     top: 45%;
@@ -148,9 +146,8 @@ a[data-toggle="collapse"] {
     overflow-y: visible;
     padding: 2rem 3rem;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     background-color: rgba(125, 90, 246, 0.5);
-    position: relative;
 }
 
 
