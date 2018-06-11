@@ -50,6 +50,7 @@ a, a:hover, a:focus {
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
+    margin-left: 0rem;
 }
 
 #sidebar.active {
@@ -117,6 +118,10 @@ ul ul a {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+#menu{
+    cursor: pointer;
+}
+
 #content {
     width: calc(100% - 15rem);
     padding: 40px;
@@ -131,30 +136,9 @@ ul ul a {
     width: 100%;
 }
 
-#sidebarCollapse:hover {
-    background-color: #7386D5;
-    color: white;
-    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
-}
-
-#sidebarCollapse:focus{
-    outline-style: none;
-}
-
-#sidebarCollapse.active {
-    background-color: #7386D5;
-    color: white;
-    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
-}
-
-#sidebarCollapse.active:hover {
-    background-color: transparent;
-    color: black;
-    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
-}
-
 #sidebarCollapse {
     top: 45%;
+    cursor: pointer;
     font-size: 1.5em;
     color: black;
     background-color: transparent;
@@ -165,18 +149,43 @@ ul ul a {
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
 }
 
+#sidebarCollapse:hover {
+    cursor: pointer;
+    background-color: #7386D5;
+    color: white;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+}
+
+#sidebarCollapse:focus{
+    outline-style: none;
+}
+
+#sidebarCollapse.active {
+    cursor: pointer;
+    background-color: #7386D5;
+    color: white;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+    z-index: 2;
+}
+
+#sidebarCollapse.active:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+}
+
 .bodyText1 {
+    /* display: table; */
     text-align: center;
-    padding: 0.25rem 0.25rem;
 }
 
 .text{
-    display: table;
     width: 100%;
 }
 
 .col{
-    display: table-cell;
+    /* display: table-cell; */
 }
 
 #content, .bodyText1, .navbar{
@@ -185,24 +194,25 @@ ul ul a {
 
 .image{
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-width: 733px;
+    max-height: 550px;
 }
 
 .intro{
     border: solid black 1px;
-    line-height: 4px;
 }
 
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #sidebar {
-        margin-left: 0rem;
+        margin-left: -15rem;
     }
     #sidebar.active {
-        margin-left: -15rem;
+        margin-left: 0rem;
     }
     #content {
         width: 100%;
@@ -212,7 +222,7 @@ ul ul a {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .col {
         display: block;
         width: 100%;

@@ -4,7 +4,7 @@ $(document).ready( function () {
     let sidebar = $('#sidebar');
     let content = $('#content');
     let sidebarCollapse = $('#sidebarCollapse');
-    let arrow = $('#arrow');
+    let menu = $('#menu');
     let collapsible = $('.collapsible');
     let chevDown = $('.fa-chevron-down');
 
@@ -12,42 +12,37 @@ $(document).ready( function () {
         sidebar.toggleClass('active');
         content.toggleClass('active');
         sidebarCollapse.toggleClass('active');
-        $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        arrow.toggleClass('fa-chevron-right fa-chevron-left');
+        menu.toggleClass('fa-bars fa-times');
     });
 
     collapsible.click( function(){
         chevDown.toggleClass('fa-chevron-down fa-chevron-up');
     });
 
-    collapseSidebar();
+    // collapseSidebar();
     $( window ).resize( function() {
         collapseSidebar();
-        if (chevDown.hasClass('fa fa-chevron-up')) {
-              chevDown.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-        }
     });
-});
 
-function collapseSidebar(){
-    let sidebar = $('#sidebar');
-    let sidebarCollapse = $('#sidebarCollapse');
-    let arrow = $('#arrow');
-    if ($(window).width() <= 550) {
-        if (sidebar.hasClass('active')){
-            sidebar.removeClass('active');
+    function collapseSidebar(){
+        sidebar.removeClass('active');
+        content.removeClass('active');
+        if (chevUp.hasClass('fa fa-chevron-times')) {
+            menu.removeClass('fa fa-chevron-times').addClass('fa fa-chevron-bars');
         }
-        arrow.removeClass('fa fa-chevron-left').addClass('fa fa-chevron-right');
+        if (chevUp.hasClass('fa fa-chevron-up')) {
+              chevUp.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        }
     }
-}
+});
 
 // $(document).ready(function () {
 //     let sidebar = $('#sidebar');
 //     let sideButton = $('.togSide');
 //     let menuBody = $('#menuBody');
 //     sideButton.click( function(){
-//         sideButton.toggleClass('fa-arrow-right fa-arrow-left');
+//         sideButton.toggleClass('fa-menu-right fa-menu-left');
 //         sidebar.toggleClass('collapsed');
 //         if (menuBody.hasClass('col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12')){
 //             menuBody.removeClass('col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12').addClass('col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8');
