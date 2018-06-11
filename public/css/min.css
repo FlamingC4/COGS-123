@@ -40,7 +40,7 @@ a, a:hover, a:focus {
     z-index: 3;
     background: #7386D5;
     color: #fff;
-    transition: all 0.3s;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
 }
 
 #sidebar.active {
@@ -48,15 +48,6 @@ a, a:hover, a:focus {
     /*position:fixed;*/
 }
 
-<<<<<<< Updated upstream
-#sidebar {
-    background: #7386D5;
-    color: #fff;
-    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
-}
-
-=======
->>>>>>> Stashed changes
 #sidebar .sidebar-header {
     padding: 20px;
     background: #7386D5;
@@ -161,7 +152,6 @@ a[data-toggle="collapse"] {
     height: 150vh;
 }
 
-<<<<<<< Updated upstream
 .container-fluid{
     padding: 2rem 3rem;
     background-color: rgba(125, 90, 246, 0.5);
@@ -175,8 +165,6 @@ a[data-toggle="collapse"] {
     padding: 0.25rem 0.25rem;
 }
 
-=======
->>>>>>> Stashed changes
 .listItem{
     margin: 0.75rem 0rem;
 }
@@ -187,25 +175,16 @@ a[data-toggle="collapse"] {
 
 .row p{
     text-align: justify;
-<<<<<<< Updated upstream
-=======
-    /* padding-right: 0.5rem; */
->>>>>>> Stashed changes
 }
 
 .bodyText1 {
     text-align: center;
     padding: 0.25rem 0.25rem;
-    max-height: 100px;
 }
 
-<<<<<<< Updated upstream
 .intro{
     padding-right: 0.5rem;
-=======
-#column2 {
-
->>>>>>> Stashed changes
+    border: solid black 1px;
 }
 
 .image{
