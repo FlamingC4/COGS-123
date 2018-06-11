@@ -4,9 +4,8 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
-html .navbar-header #content .bodyText1 {
+#content {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffb92d;
 }
 
 p {
@@ -29,7 +28,7 @@ a, a:hover, a:focus {
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
 }
 
 .navbar-btn {
@@ -132,19 +131,6 @@ ul ul a {
     width: 100%;
 }
 
-#sidebarCollapse {
-    top: 45%;
-    left: 0;
-    font-size: 1.5em;
-    color: black;
-    background-color: transparent;
-    border: 1px solid transparent;
-    margin-left: -0.5rem;
-    border-radius: 0.5rem;
-    z-index: 2;
-    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
-}
-
 #sidebarCollapse:hover {
     background-color: #7386D5;
     color: white;
@@ -165,6 +151,27 @@ ul ul a {
     background-color: transparent;
     color: black;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+}
+
+#sidebarCollapse {
+    top: 45%;
+    font-size: 1.5em;
+    color: black;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    padding: 0.25rem 0.5rem;
+    z-index: 2;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+}
+
+.bodyText1 {
+    text-align: center;
+    padding: 0.25rem 0.25rem;
+}
+
+#content, .bodyText1, .navbar{
+    background-color: #ffb92d;
 }
 
 
