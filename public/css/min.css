@@ -79,6 +79,10 @@ a, a:hover, a:focus {
     background: #7386D5;
 }
 
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
 .sidebar-header h3 b{
     font-size: 3rem;
     color: #ffb92d;
@@ -96,7 +100,7 @@ ul ul a {
 }
 
 a[data-toggle="collapse"] {
-    position:relative;
+    position: relative;
 }
 
 #sidebarCollapse {
@@ -200,112 +204,4 @@ a[data-toggle="collapse"] {
 
 a[aria-expanded="true"]::before {
     content: '\e260';
-} */
-
-/* @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-} */
-
-/* body{
-    margin: 0em;
-}
-
-.menu{
-    display: flex;
-}
-
-.bootstrap {
-    border: solid rgba(125,90,47,1) 3px;
-}
-
-
-#sidebar {
-    width: 0%;
-    height: 500px;
-    margin-right: -200px;
-    position: relative;
-    left: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 1;
-    transition: all cubic-bezier(0.25,0.1,0.25,1) .2s;
-    opacity: 0;
-}
-
-#sidebar.collapsed {
-  width: 100%;
-  margin-right: 0px;
-  transition: all cubic-bezier(0.25,0.1,0.25,1) .2s;
-  opacity: 1;
-}
-
-#menuBody{
-    display: flex;
-    flex-direction: row;
-    float: center;
-} */
-
-/* .sidebar {
-  width: 25%;
-  height: 100%;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  left: 0;
-  background-color: #ccc;
-  transition: all cubic-bezier(0.25,0.1,0.25,1) .2s;
-} */
-
-/* .sidebar.collapsed {
-  left: -12.5%;
-  transition: all cubic-bezier(0.25,0.1,0.25,1) .2s;
-}
-
-.togSide {
-    width: 40px;
-    height: 40px;
-    margin: .25em .25em;
-    position: relative;
-    font-size: 1.5em;
-    color: black;
-    cursor: pointer;
-    left: -0.75em;
-    z-index: 2;
-} */
-
-/* .hiddenContent{
-background-color: rgba(125,90,47,1);
-} */
-/* .dropbtn {
-    margin: 0em 0em 0em -.5em;
-    float: center;
-    display: inline-block;
-    position: fixed;
-    background-color: transparent;
-    width: 70px;
-    height: 60px;
-    cursor: pointer;
-    border-color: black;
-    border-radius: 14px;
-    z-index: 2;
-    -webkit-transition: all ease 0.4s;
-    -moz-transition: all ease 0.4s;
-    -o-transition: all ease 0.4s;
-    transition: all ease 0.4s;
-}
-
-.bars {
-    display: block;
-    width: 45px;
-    height: 6px;
-    transition: 0.25s;
-    margin: .5em 0 0 .25em;
-    border-radius: 14px;
-    z-index: 4;
-    opacity: 1;
-	background: black;
 } */
