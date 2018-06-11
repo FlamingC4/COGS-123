@@ -4,9 +4,9 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
-body {
+html .navbar-header #content .bodyText1 {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background-color: #ffb92d;
 }
 
 p {
@@ -109,13 +109,11 @@ a[aria-expanded="true"]::before {
     content: '\e260';
 }
 
-
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #7386D5;
 }
-
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -129,8 +127,44 @@ ul ul a {
     top: 0;
     right: 0;
 }
+
 #content.active {
     width: 100%;
+}
+
+#sidebarCollapse {
+    top: 45%;
+    left: 0;
+    font-size: 1.5em;
+    color: black;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-left: -0.5rem;
+    border-radius: 0.5rem;
+    z-index: 2;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+}
+
+#sidebarCollapse:hover {
+    background-color: #7386D5;
+    color: white;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+}
+
+#sidebarCollapse:focus{
+    outline-style: none;
+}
+
+#sidebarCollapse.active {
+    background-color: #7386D5;
+    color: white;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+}
+
+#sidebarCollapse.active:hover {
+    background-color: transparent;
+    color: black;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
 }
 
 
@@ -149,9 +183,6 @@ ul ul a {
     }
     #content.active {
         width: calc(100% - 15rem);
-    }
-    #sidebarCollapse span {
-        display: none;
     }
 }
 

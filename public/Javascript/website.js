@@ -15,12 +15,6 @@ $(document).ready( function () {
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         arrow.toggleClass('fa-chevron-right fa-chevron-left');
-        // if (arrow.hasClass('fa fa-arrow-left')){
-        //     arrow.removeClass('fa fa-arrow-left');
-        //     arrow.addClass('fa fa-arrow-right');
-        // } else {
-        //     arrow.removeClass('fa fa-arrow-right').addClass('fa fa-arrow-left');
-        // }
     });
 
     collapsible.click( function(){
