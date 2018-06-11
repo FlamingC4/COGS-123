@@ -201,6 +201,17 @@ ul ul a {
 
 .intro{
     border: solid black 1px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+#introText {
+    text-align: justify;
+}
+
+#introTitle #introText{
+    justify-content: start;
 }
 
 
@@ -220,6 +231,10 @@ ul ul a {
     #content.active {
         width: calc(100% - 15rem);
     }
+    .intro{
+        padding: 1rem 0rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {

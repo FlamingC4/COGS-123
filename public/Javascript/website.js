@@ -7,7 +7,10 @@ $(document).ready( function () {
     let menu = $('#menu');
     let collapsible = $('.collapsible');
     let chevDown = $('.fa-chevron-down');
+    let chevUp = $('.fa-chevron-up');
 
+
+    sidebarCollapse.addClass('active');
     sidebarCollapse.click( function(){
         sidebar.toggleClass('active');
         content.toggleClass('active');
