@@ -90,7 +90,7 @@ a, a:hover, a:focus {
     -webkit-text-stroke: 2px black;
 } */
 
-ul ul a {
+ul li a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: rgb(115, 134, 213);
@@ -100,7 +100,9 @@ ul ul a {
     font-size: 1.5rem;
 }
 
-
+#promptText li{
+    font-size: 1.1rem;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -141,7 +143,7 @@ ul ul a {
 .num1{
     background-color: rgba(255,255,255,0.85);
     color: black;
-    box-shadow: 0px 0px 100px 50px rgba(255,255,255,0.95);
+    box-shadow: 0px 0px 100px 50px rgba(255,255,255,0.8);
 }
 
 #content {
@@ -263,7 +265,7 @@ ul ul a {
     align-items: start;
 }
 
-#introTitle, #needRes {
+#introTitle, #needRes, #prototype1, #prototype2 {
     font-size: 7.5vw;
 }
 
@@ -306,10 +308,25 @@ ul ul a {
     background-image: url('../images/Competitive Analysis.PNG');
 }
 
-#audience{
-
+#parallax3{
+    min-height: 40rem;
+    background-size: 120%;
+    background-image: url('../images/prototype1.PNG');
 }
 
+#prototype3 p {
+    font-size: 0.8rem;
+}
+
+#closingStatement p {
+    font-size: 2.5rem;
+}
+
+#parallax4{
+    min-height: 40rem;
+    background-size: 120%;
+    background-image: url('../images/fbEvent.PNG');
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
