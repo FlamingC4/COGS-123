@@ -10,7 +10,7 @@ $(document).ready( function () {
     let chevUp = $('.fa-chevron-up');
 
 
-    sidebarCollapse.addClass('active');
+    // sidebarCollapse.addClass('active');
     sidebarCollapse.click( function(){
         sidebar.toggleClass('active');
         content.toggleClass('active');
