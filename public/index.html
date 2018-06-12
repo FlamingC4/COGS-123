@@ -29,13 +29,25 @@
             </div>
             <ul class="list-unstyled components">
                 <li class="listItem" id="home">
-                    <a href="index.html">
+                    <a href="#title">
                         <div class="row">
                             <div class="icon col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 justify-content-right">
-                                <span class="fas fa-home"></span>
+                                <span class="fas fa-arrow-up"></span>
                             </div>
                             <div class="icon col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 justify-content-left">
-                                Home
+                                Return to Top
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="listItem" id="prompt">
+                    <a href="#thePrompt">
+                        <div class="row">
+                            <div class="icon col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 justify-content-right">
+                                <span class="fas fa-clipboard-list"></span>
+                            </div>
+                            <div class="icon col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 justify-content-left">
+                                The Prompt
                             </div>
                         </div>
                     </a>
@@ -47,7 +59,7 @@
                                 <span class="fas fa-window-maximize" id="toggleChev1"></span>
                             </div>
                             <div class="icon col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 justify-content-left" id="desProc">
-                                The Design Process
+                                Our Design Process
                             </div>
                             <div class="icon col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 align-self-center text-center">
                                 <span class="fas fa-chevron-down" id="toggleChev1"></span>
@@ -56,13 +68,13 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li class="listItem">
-                            <a href="#needfinding">
+                            <a href="#needRes">
                                 <div class="row ">
                                     <div class="icon col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 justify-content-right">
-                                        <span class="fas fa-bullseye"></span>
+                                        <span class="fas fa-search"></span>
                                     </div>
                                     <div class="icon col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 justify-content-left">
-                                        Needfinding
+                                        Needfinding & Research
                                     </div>
                                 </div>
                             </a>
@@ -132,23 +144,21 @@
                 </div>
             </div>
             <div class="row intro" id="parallax1">
-                <div class="text col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-left">
-                    <div class="row-h-10 intro num1" id="introTitle">
-                         Intro
+                <div class="row-h-10 intro num1" id="introTitle">
+                    <div class="col-4 text-center" id="intro1">
+                        Intro
                     </div>
+                </div>
+                <div class="text col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="row-h-70 intro num1" id="introText">
                         <p>UCSD: an app that brings the audience together in every game. Our goal is to facilitate interest and
                             get the crowd even more excited about the game.</p>
                     </div>
-                    <a href="#needfinding">
-                        <div class="row-h-70 intro" id="introText">
+                    <a class="listItem" href="#thePrompt">
+                        <div class="row intro">
                             <button type="button" class="advanceButtons needfinding">
-                                <div class="col-6 text-center">
-                                    <span class="icon fas fa-bullseye"></span>
-                                </div>
-                                <div class="col-6">
-                                   <p>Needfinding</p>
-                               </div>
+                                    <span class="icon fas fa-clipboard-list"></span>
+                                    <h2>The Prompt</h2>
                             </button>
                         </div>
                     </a>
@@ -158,40 +168,130 @@
 
         <div class="active" id="content">
             <div class="row intro" id="bodyTextPart1">
-                <div class="text col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-left">
-                    <div class="row-h-10 intro " id="needfinding">
-                         Needfinding
+                <div class="text col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-left">
+                    <div class="row-h-10 intro" id="thePrompt">
+                         <h3><b>The Prompt</b><h3>
                     </div>
-                    <div class="row-h-90 intro" id="introText">
-                        <p>UCSD: an app that brings the audience together in every game. Our goal is to facilitate interest and
-                            get the crowd even more excited about the game.</p>
+                    <div class="row-h-90 intro" id="promptText">
+                        <p>Our team of four was tasked with creating a novel social computing
+                           experience that was both synchronous and co-located. In other words,
+                           not only would we have to create an experience that causes our users
+                           to interact with each other in a unique way, we were limited in our
+                           scope to creating a product that was to be used with others at the
+                           same time in the same location. Furthermore, this task was
+                           exacerbated by the fact that we only had 5 weeks to create a final
+                           version with two iterations of rapid prototypes.</p>
                     </div>
                 </div>
-                <div class="text col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 justify-content-end text-right" id="column2">
-                    <div class="row-h-60 intro">
-                        <img src="http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg" alt="Doge" class="image">
+                <div class="text col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 justify-content-center" id="column2">
+                    <div class="row prompt">
+                        <img src="images/FinalProject.PNG" alt="Final Project" class="image">
                     </div>
-                    <div class="row-h-40 intro">
+                    <div class="row prompt text-center" id="theme">
+                            <b>Our Chosen Project Theme</b>
+                    </div>
+                    <div class="row prompt" id="sportingEvents">
+                        <i><p>Sporting Events</p></i>
+                    </div>
+                    <div class="row prompt text-left">
+                            <p>How might we create social connections between fans?</p>
+                    </div>
+                    <div class="row prompt text-left">
+                            <p>How might we create interactions that revolve around actions in the sporting event (i.e., a touchdown or strikeout)?</p>
+                    </div>
+                    <!-- <div class="row-h-40 intro">
                         <p>Testing text.</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
-            <div class="fixedBackImg">
+            <div class="fixedBackImg" id="parallax2">
+                <div class="row intro">
+                    <div class="text col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="row-h-10 intro num1" id="needRes">
+                             Needfinding & Research
+                        </div>
+                        <div class="row-h-70 intro num1" id="introText">
+                            <p>
+                                In the initial stages of our project, we had to pick a field
+                                from several different contexts - education, sporting events,
+                                concerts / plays, town hall meetings, creative collaborations,
+                                gaming meetups, and corporate meetings - in order to focus our
+                                creation on a singular objective. We started off by exploring
+                                the space of sports games. We performed interviews from people
+                                of various sporting backgrounds, ranging from audience members
+                                to student athletes.</p>
+                        </div>
+                        <!-- <a class="listItem" href="#thePrompt">
+                            <div class="row intro">
+                                <button type="button" class="advanceButtons needfinding">
+                                        <span class="icon fas fa-clipboard-list"></span>
+                                        <h2>Needfinding</h2>
+                                </button>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
             </div>
 
-            <div class="text col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-start text-left" id="column1">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                   when an unknown printer took a galley of type and scrambled it to make a type
-                   specimen book. It has survived not only five centuries, but also the leap into
-                   electronic typesetting, remaining essentially unchanged. It was popularised in
-                   the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                   and more recently with desktop publishing software like Aldus PageMaker
-                   including versions of Lorem Ipsum.<p>
+            <div class="active" id="content">
+                <div class="row intro" id="bodyTextPart1">
+                    <div class="text col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-left">
+                        <img src="images/audienceGame.PNG" alt="Final Project" class="image" id="audience">
+                    </div>
+                    <div class="text col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 align-items-center">
+                        <img src="images/celticsStadium.jpeg" alt="Final Project" class="image">
+                    </div>
+                </div>
+                <div class="row intro" id="bodyTextPart1">
+                    <div class="text col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center" id="column2">
+                        <div class="row-h-10 intro" id="thePrompt">
+                             <h3><b>Observations and Interviews</b><h3>
+                        </div>
+                        <div class="row-h-90 intro" id="promptText">
+                            <p>In order to find a gap - a space in which our product could facilitate more interaction
+                                or smoother transition - our team conducted several interviews with sports audience
+                                members of various knowledge levels and observed sports games within our viable time
+                                period and area. Additionally, we also created observations both from watching a local,
+                                college-level baseball game and from watching clips of sports games online. We did this
+                                because we wanted to see the interactions that would naturally come about within the
+                                audience members during a real game. However, we also wanted to watch clips of sports
+                                games online to see the different interactions from a wider range of sports. Furthermore,
+                                we wanted to compare and contrast the types of interactions that comes about during
+                                higher legure sports games. As a result, we decided to limit our scope to creating an
+                                app to be used by audience members of a game in order to enhance their in-game experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row intro" id="bodyTextPart1">
+                    <div class="text col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
+                        <img src="images/comparisonChart.PNG" alt="Final Project" class="image" id="audience">
+                    </div>
+                    <div class="text col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 align-items-center">
+                        <img src="images/compGraph.PNG" alt="Final Project" class="image">
+                    </div>
+                </div>
+                <div class="row intro" id="bodyTextPart1">
+                    <div class="text col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center" id="column2">
+                        <div class="row-h-10 intro" id="thePrompt">
+                             <h3><b>Competitive Analysis</b><h3>
+                        </div>
+                        <div class="row-h-90 intro" id="promptText">
+                            <p>On top of scouring the internet to familiarize ourselves
+                            in sporting events, we also performed
+                            secondary research that composed of our competitive analysis
+                            and design space to see if there was an unfulfilled need within
+                            the scope of real-time, co-located apps to be used during sports
+                            games. Ultimately, we did choose to create an interactive
+                            application for sporting events as we felt that of the
+                            possible contexts, this area was of high, normally unexplored
+                            interest in social interaction and technology.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div>
+        </div>
   </body>
 
   <!-- JS, Popper.js, and jQuery links provided by Bootstrap website -->

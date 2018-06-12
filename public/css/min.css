@@ -6,7 +6,7 @@
 body{
     overflow-x: hidden;
     background: rgb(255, 185, 45, 0.90);
-    color: white;
+    color: black;
 }
 
 #content {
@@ -15,9 +15,13 @@ body{
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.7em;
+}
+
+h1{
+    font-size: 8vw;
 }
 
 a, a:hover, a:focus {
@@ -107,9 +111,8 @@ ul ul a {
 }
 
 .fixedBackImg {
-    width: 100%;
-    background-image: url("http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg");
-    min-height: 50rem;
+    min-width: 100%;
+    min-height: 30rem;
     background-size: 500%;
     background-attachment: fixed;
     background-position: center;
@@ -120,7 +123,7 @@ ul ul a {
 #lMProto {
     background-position: 20% 0% 0% 0%;
     background-size: 120%;
-    background-image: url('../images/laurenSectionPrototyping.PNG');
+    background-image: url('../images/wireframes.PNG');
     background-blend-mode: lighten;
 }
 
@@ -129,16 +132,16 @@ ul ul a {
     font-size: 2rem;
 }
 
-#parallax1{
+#parallax1, #parallax2{
     position: relative;
     margin-top: 5%;
-    padding: 30% 7.5%;
+    padding: 15% 7.5%;
 }
 
 .num1{
     background-color: rgba(255,255,255,0.85);
     color: black;
-    box-shadow: 0px 0px 100px 50px rgba(255,255,255,1);
+    box-shadow: 0px 0px 100px 50px rgba(255,255,255,0.95);
 }
 
 #content {
@@ -172,7 +175,6 @@ ul ul a {
     margin-left: 0rem;
     z-index: 3;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
-
 }
 
 #sidebarCollapse:hover {
@@ -205,6 +207,7 @@ ul ul a {
 
 .advanceButtons {
     margin: 2% 0%;
+    padding: auto 15%;
     cursor: pointer;
     background-color: rgb(115, 134, 213);
     color: white;
@@ -221,11 +224,19 @@ ul ul a {
     outline-style: none;
 }
 
+.advanceButtons span{
+    font-size: 4rem;
+}
+
+.advanceButtons h2 {
+    font-size: 2.5rem;
+}
+
 #title, .bodyText1 {
     padding: 2% 3.5%;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
     background-color: rgb(255, 185, 45, 0.75);
-    box-shadow: 0px 0px 100px 50px rgba(255, 185, 45, 0.75);
+    box-shadow: 0px 0px 100px 50px rgba(255, 185, 45, 0.85);
 }
 
 #title{
@@ -247,28 +258,75 @@ ul ul a {
 }
 
 .intro{
-    /* border: solid black 1px; */
+    border: solid black 1px;
     display: flex;
     align-items: start;
 }
 
-#introTitle {
+#introTitle, #needRes {
     font-size: 7.5vw;
+}
+
+#introTitle{
+    display: block;
 }
 
 #introText{
     padding: 0rem 1rem;
-    font-size: 7.5vw;
+    font-size: 10vw;
+}
+
+#introText p {
+    font-size: 2.2vw;
 }
 
 .header, .intro, #introText, #introTitle{
     justify-content: center;
 }
 
+.prompt{
+    justify-content: center;
+    padding: 2% 2%;
+}
+
+#theme b {
+    font-size: 1.5rem;
+}
+
+#sportingEvents p{
+    font-size: 2rem;
+}
+
+#promptText{
+    font-size: 25vh;
+}
+
+#parallax2{
+    background-size: 100%;
+    background-image: url('../images/Competitive Analysis.PNG');
+}
+
+#audience{
+
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+@media only screen and (max-width: 1000px) {
+    #introText{
+        font-size: 25vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .col {
+        display: block;
+        width: 100%;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .intro{
         padding: 1rem 0rem;
@@ -284,13 +342,14 @@ ul ul a {
 }
 
 @media only screen and (max-width: 600px) {
+    .fixedBackImg {
+        background-size: 2000%;
+    }
+
     .intro{
         padding: 1rem 0rem;
     }
 
-}
-
-@media only screen and (max-width: 600px) {
     .col {
         display: block;
         width: 100%;
