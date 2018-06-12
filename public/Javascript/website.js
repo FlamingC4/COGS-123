@@ -29,13 +29,18 @@ $(document).ready( function () {
 });
 
 function collapseSidebar(){
-    sidebar.removeClass('active');
-    content.removeClass('active');
-    if (chevUp.hasClass('fa fa-chevron-times')) {
-        menu.removeClass('fa fa-chevron-times').addClass('fa fa-chevron-bars');
-    }
-    if (chevUp.hasClass('fa fa-chevron-up')) {
-          chevUp.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    let sidebar = $('#sidebar');
+    let content = $('#content');
+    let sidebarCollapse = $('#sidebarCollapse');
+    let menu = $('#menu');
+    let collapsible = $('.collapsible');
+    let chevDown = $('.fa-chevron-down');
+    let chevUp = $('.fa-chevron-up');
+    if ($(window).width() <= 600) {
+        sidebar.addClass('active');
+        sidebarCollapse.removeClass('active');
+        content.addClass('active');
+        menu.removeClass('fa fa-times').addClass('fa fa-bars');
     }
 }
 
