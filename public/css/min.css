@@ -8,14 +8,6 @@ body{
 
 #content {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffb92d;
-    background-image: url("https://icon54.com/wp-content/uploads/2016/03/Sports-24-min.png");
-    min-height: 40rem;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 p {
@@ -42,7 +34,7 @@ a, a:hover, a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: rgb(115, 134, 213);
     color: #fff;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
     margin-left: 0rem;
@@ -54,7 +46,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #7386D5;
+    background: rgb(115, 134, 213);
 }
 
 .sidebar-header p {
@@ -77,13 +69,13 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: rgb(115, 134, 213);
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #7386D5;
+    background: rgb(115, 134, 213);
 }
 
 /* .sidebar-header h3 b{
@@ -95,7 +87,7 @@ a, a:hover, a:focus {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #7386D5;
+    background: rgb(115, 134, 213);
 }
 
 .icon span {
@@ -113,7 +105,7 @@ ul ul a {
 }
 
 .testing{
-    margin-top: 10%;
+    margin-top:
 }
 
 
@@ -152,24 +144,26 @@ ul ul a {
 #sidebarCollapse {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 2%;
     cursor: pointer;
     font-size: 0.5rem;
     color: white;
-    background-color: #7386D5;
+    background-color: rgb(115, 134, 213);
     border: 1px solid transparent;
     border-radius: 0rem .5rem .5rem 0rem;
     padding: 0.25rem 0.5rem;
     margin-left: 0rem;
     z-index: 3;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+
 }
 
 #sidebarCollapse:hover {
     cursor: pointer;
-    background-color: #7386D5;
+    background-color: rgb(115, 134, 213);
     color: white;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+    box-shadow: 0px 0px 5px 2.5px rgba(255,255,255,1);
 }
 
 #sidebarCollapse:focus{
@@ -177,9 +171,10 @@ ul ul a {
 }
 
 #sidebarCollapse.active {
+    top: 0%;
     margin-left: 15rem;
     cursor: pointer;
-    background-color: #7386D5;
+    background-color: rgb(115, 134, 213);
     color: white;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
     z-index: 2;
@@ -188,12 +183,14 @@ ul ul a {
 #sidebarCollapse.active:hover {
     cursor: pointer;
     transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
+    box-shadow: 0px 0px 5px 2.5px rgba(255,255,255,1);
 }
 
 .title, .bodyText1 {
     width: 100%;
+    padding: 2% 7.5%;
+    transition: all cubic-bezier(0.25,0.1,0.25,1) .25s;
     background-color: rgba(255,255,255,0.90);
-    box-shadow: inset 0px 0px 30px 10px rgba(255,255,255,1), 0px 0px 30px 20px rgba(255,255,255,1);
 }
 
 .bodyText1 {
