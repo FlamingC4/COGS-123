@@ -4,6 +4,7 @@ $(document).ready( function () {
     let sidebar = $('#sidebar');
     let content = $('#content');
     let sidebarCollapse = $('#sidebarCollapse');
+    let listItem = $('.listItem');
     let menu = $('#menu');
     let collapsible = $('.collapsible');
     let chevDown = $('.fa-chevron-down');
@@ -22,13 +23,26 @@ $(document).ready( function () {
         chevDown.toggleClass('fa-chevron-down fa-chevron-up');
     });
 
+    listItem.click( function(){
+        collapseSidebar2();
+    });
+
     // collapseSidebar();
     $( window ).resize( function() {
         collapseSidebar();
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });
 
-function collapseSidebar(){
+function collapseSidebar() {
     let sidebar = $('#sidebar');
     let content = $('#content');
     let sidebarCollapse = $('#sidebarCollapse');
@@ -37,11 +51,19 @@ function collapseSidebar(){
     let chevDown = $('.fa-chevron-down');
     let chevUp = $('.fa-chevron-up');
     if ($(window).width() <= 600) {
-        sidebar.addClass('active');
-        sidebarCollapse.removeClass('active');
-        content.addClass('active');
-        menu.removeClass('fa fa-times').addClass('fa fa-bars');
+        collapseSidebar2();
     }
+}
+
+function collapseSidebar2() {
+    let sidebar = $('#sidebar');
+    let content = $('#content');
+    let sidebarCollapse = $('#sidebarCollapse');
+    let menu = $('#menu');
+    sidebar.addClass('active');
+    sidebarCollapse.removeClass('active');
+    content.addClass('active');
+    menu.removeClass('fa fa-times').addClass('fa fa-bars');
 }
 
 // $(document).ready(function () {
