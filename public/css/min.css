@@ -59,7 +59,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #7386D5;
 }
 
 #sidebar ul.components {
@@ -92,28 +92,18 @@ a, a:hover, a:focus {
     -webkit-text-stroke: 2px black;
 }
 
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
-    display: block;
-    position: absolute;
-    right: 20px;
-    font-family: 'Glyphicons Halflings';
-    font-size: 0.6em;
-}
-a[aria-expanded="true"]::before {
-    content: '\e260';
-}
-
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #7386D5;
 }
+
+.icon span {
+    font-size: 1.5rem;
+    margin-left: .1rem;
+}
+
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -202,7 +192,7 @@ ul ul a {
 .intro{
     border: solid black 1px;
     display: flex;
-    align-items: center;
+    align-items: start;
     padding: 1rem 0.5rem;
 }
 
@@ -210,15 +200,15 @@ ul ul a {
     text-align: justify;
 }
 
-#introTitle #introText{
-    justify-content: start;
+.header, .intro, #introText, #introTitle{
+    justify-content: center;
 }
 
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     #sidebar {
         margin-left: -15rem;
     }
@@ -237,7 +227,7 @@ ul ul a {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .col {
         display: block;
         width: 100%;

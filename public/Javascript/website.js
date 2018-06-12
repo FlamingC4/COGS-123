@@ -27,18 +27,18 @@ $(document).ready( function () {
     $( window ).resize( function() {
         collapseSidebar();
     });
-
-    function collapseSidebar(){
-        sidebar.removeClass('active');
-        content.removeClass('active');
-        if (chevUp.hasClass('fa fa-chevron-times')) {
-            menu.removeClass('fa fa-chevron-times').addClass('fa fa-chevron-bars');
-        }
-        if (chevUp.hasClass('fa fa-chevron-up')) {
-              chevUp.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-        }
-    }
 });
+
+function collapseSidebar(){
+    sidebar.removeClass('active');
+    content.removeClass('active');
+    if (chevUp.hasClass('fa fa-chevron-times')) {
+        menu.removeClass('fa fa-chevron-times').addClass('fa fa-chevron-bars');
+    }
+    if (chevUp.hasClass('fa fa-chevron-up')) {
+          chevUp.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    }
+}
 
 // $(document).ready(function () {
 //     let sidebar = $('#sidebar');
