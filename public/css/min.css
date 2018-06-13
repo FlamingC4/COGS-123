@@ -329,7 +329,7 @@ ul li a {
 #parallax4{
     min-height: 40rem;
     background-size: 100%;
-    background-image: url('../images/feedback1.PNG');
+    background-image: url('../images/feedback1.png');
 }
 
 #parallax5{
@@ -355,7 +355,7 @@ ul li a {
 #parallax7 {
     min-height: 40rem;
     background-size: 90%;
-    background-image: url('../images/resultsFeedback.PNG');
+    background-image: url('../images/resultsFeedback.png');
 }
 
 /* ---------------------------------------------------
