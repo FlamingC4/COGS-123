@@ -38,7 +38,7 @@ a, a:hover, a:focus {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 120vh;
     z-index: 999;
     background: rgb(115, 134, 213);
     color: #fff;
@@ -61,7 +61,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 #sidebar ul p {
@@ -134,7 +134,7 @@ ul li a {
     font-size: 2rem;
 }
 
-#parallax1, #parallax2{
+#parallax1, #parallax2, #parallax3, #parallax4, #parallax5, #parallax6, #parallax7 {
     position: relative;
     margin-top: 5%;
     padding: 15% 7.5%;
@@ -159,7 +159,7 @@ ul li a {
 }
 
 .testHeader{
-    border: solid black 1px;
+    /* border: solid black 1px; */
     width: 100%;
 }
 
@@ -260,13 +260,21 @@ ul li a {
 }
 
 .intro{
-    border: solid black 1px;
+    /* border: solid black 1px; */
     display: flex;
     align-items: start;
 }
 
-#introTitle, #needRes, #prototype1, #prototype2 {
+#introTitle, #prototype1, #feedIterating, #prototype2, #wireframes {
     font-size: 7.5vw;
+}
+
+#needRes {
+    font-size: 6.5vw;
+}
+
+#results {
+    font-size: 5.5vw;
 }
 
 #introTitle{
@@ -314,18 +322,40 @@ ul li a {
     background-image: url('../images/prototype1.PNG');
 }
 
-#prototype3 p {
-    font-size: 0.8rem;
-}
-
 #closingStatement p {
     font-size: 2.5rem;
 }
 
 #parallax4{
     min-height: 40rem;
+    background-size: 100%;
+    background-image: url('../images/feedback1.PNG');
+}
+
+#parallax5{
+    min-height: 40rem;
     background-size: 120%;
     background-image: url('../images/fbEvent.PNG');
+}
+
+#parallax6{
+    min-height: 40rem;
+    background-size: 90%;
+    background-image: url('../images/largeSketch.JPG');
+}
+
+#wireframes {
+    font-size: 6.5vw;
+}
+
+/* #largeSketch, #largeSketch2, #largeSketch3 {
+    transform: rotate(90deg);
+} */
+
+#parallax7 {
+    min-height: 40rem;
+    background-size: 90%;
+    background-image: url('../images/resultsFeedback.PNG');
 }
 
 /* ---------------------------------------------------
